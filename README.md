@@ -1,8 +1,8 @@
-# 🌸 Lyly Corpo
+# 🌸 Lyly 
 
 <div align="center">
 
-**A V-Tuber avatar com inteligência artificial — 100% procedural, zero keyframes.**
+**V-Tuber avatar com inteligência artificial — 100% procedural, zero keyframes.**
 
 [![Electron](https://img.shields.io/badge/Electron-%2347848F.svg?style=for-the-badge&logo=electron&logoColor=white)](https://www.electronjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
@@ -17,7 +17,15 @@
 
 <div align="center">
 
-[![Assista à demo da Lyly](https://img.shields.io/badge/▶️_Assistir_Demo-lyly.mp4-brightgreen?style=for-the-badge&logo=youtube)](./lyly.mp4)
+<a href="https://www.youtube.com/watch?v=vW6walwxW6k">
+  <img src="https://img.youtube.com/vi/vW6walwxW6k/maxresdefault.jpg" alt="Lyly Corpo Demo" width="900">
+</a>
+
+<br><br>
+
+<a href="https://www.youtube.com/watch?v=vW6walwxW6k">
+  <img src="https://img.shields.io/badge/▶_Watch_Full_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+</a>
 
 </div>
 
@@ -27,7 +35,7 @@
 
 ## ✨ O que é a Lyly?
 
-**Lyly Corpo** é um avatar VRM 3D com animações procedurais integradas a uma IA conversacional. Ela não usa keyframes ou animações pré-gravadas — cada expressão facial, piscada de olhos e movimento labial é calculado em tempo real pela GPU.
+**Lyly** é um avatar VRM 3D com animações procedurais integradas a uma IA conversacional. Ela não usa keyframes ou animações pré-gravadas — cada expressão facial, piscada de olhos e movimento labial é calculado em tempo real pela GPU.
 
 ### O que ela faz:
 - 🗣️ **Conversa naturalmente** com você via chat flutuante
@@ -57,26 +65,26 @@
 ## 🧬 Arquitetura
 
 ```
-┌─────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │                 Lyly Corpo                       │
 │                                                  │
-│  ┌──────────┐    IPC      ┌──────────────────┐  │
-│  │ Renderer │ ◄────────► │     Main (Hub)   │  │
-│  │          │  Avatar     │                  │  │
-│  │ • Three.js│ Visemes   │ • Roteia eventos │  │
-│  │ • VRM    │  Emotion   │ • Cache emoções  │  │
-│  │ • PoseMgr│            └───────┬──────────┘  │
-│  │ • LipSync│                    │              │
-│  │ • Blink  │              ┌─────▼──────────┐  │
-│  └──────────┘              │   Lyly Brain   │  │
-│                            │                │  │
-│  ┌──────────┐              │ • LLM (Ollama) │  │
-│  │ Chat UI  │              │ • ChromaDB     │  │
-│  │ Overlay  │              │ • StreamProc   │  │
-│  └──────────┘              │ • Reflection   │  │
-│                            │ • TTS Pipeline │  │
-│                            └─────────────────┘  │
-└─────────────────────────────────────────────────┘
+│  ┌───────────┐    IPC      ┌──────────────────┐  │
+│  │ Renderer  │ ◄────────►  │     Main (Hub)   │  │
+│  │           │  Avatar     │                  │  │
+│  │ • Three.js│  Visemes    │ • Roteia eventos │  │
+│  │ • VRM     │  Emotion    │ • Cache emoções  │  │
+│  │ • PoseMgr │             └───────┬──────────┘  │
+│  │ • LipSync │                     │             │
+│  │ • Blink   │              ┌──────▼──────────┐  │
+│  └───────────┘              │   Lyly Brain    │  │
+│                             │                 │  │
+│  ┌──────────┐               │ • LLM (Ollama)  │  │
+│  │ Chat UI  │               │ • ChromaDB      │  │
+│  │ Overlay  │               │ • StreamProc    │  │
+│  └──────────┘               │ • Reflection    │  │
+│                             │ • TTS Pipeline  │  │
+│                             └─────────────────┘  │
+└──────────────────────────────────────────────────┘
 ```
 
 ### Fluxo de uma conversa:
@@ -177,23 +185,6 @@ lyly-corpo/
     └── chroma.py        # Servidor ChromaDB (Python)
 ```
 
----
-
-## 🧪 Modo Debug
-
-Teclas de teste facial (direto no renderer):
-
-| Tecla | Expressão | Tecla | Visema Boca |
-|-------|-----------|-------|-------------|
-| `1` | 😊 Happy | `Q` | Fcl_MTH_A |
-| `2` | 😢 Sad | `W` | Fcl_MTH_I |
-| `3` | 😠 Angry | `E` | Fcl_MTH_U |
-| `4` | 😲 Surprised | `R` | Fcl_MTH_E |
-| `5` | 😌 Relaxed | `T` | Fcl_MTH_O |
-| `6` | 😉 Wink | `F` | Reset Boca |
-| `0` | 😐 Neutral | `ESC` | Sai do teste |
-
----
 
 ## 📊 Dados Técnicos
 
@@ -226,12 +217,12 @@ Teclas de teste facial (direto no renderer):
 
 ## 📄 Licença
 
-Projeto pessoal — portfólio.
+Projeto pessoal.
 
 ---
 
 <div align="center">
 
-**Feito com 💜 por Messias** · [GitHub](https://github.com/seu-usuario)
+**Feito por solitario001** · [GitHub](https://github.com/solitario001)
 
 </div>
