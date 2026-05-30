@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat</title>
+  <!-- Fonte Inter para melhor leitura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="chat-container">
+    <header class="chat-header">
+      <h1>AI Assistant</h1>
+      <!-- Botão de Configurações -->
+      <button id="settings-btn" class="settings-btn" title="Configurações">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </button>
+    </header>
+    
+    <!-- Handles de redimensionamento -->
+    <div class="resize-handle top" data-dir="top"></div>
+    <div class="resize-handle bottom" data-dir="bottom"></div>
+    <div class="resize-handle left" data-dir="left"></div>
+    <div class="resize-handle right" data-dir="right"></div>
+    <div class="resize-handle top-left" data-dir="top-left"></div>
+    <div class="resize-handle top-right" data-dir="top-right"></div>
+    <div class="resize-handle bottom-left" data-dir="bottom-left"></div>
+    <div class="resize-handle bottom-right" data-dir="bottom-right"></div>
+    
+    <section id="chat-messages" class="chat-messages" aria-live="polite">
+      <!-- Messages will be injected here -->
+    </section>
+
+    <footer class="chat-input-area">
+      <form id="chat-form" class="chat-form">
+        <input type="text" id="user-input" class="chat-input" placeholder="Digite sua mensagem..." aria-label="Campo de mensagem" autocomplete="off">
+        <button type="submit" id="send-btn" class="send-btn" aria-label="Enviar mensagem">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </form>
+    </footer>
+
+    <!-- Modal de Configurações -->
+    <div id="settings-modal" class="settings-overlay">
+      <div class="settings-modal">
+        <h2>Aparência <button id="close-settings" class="close-settings">&times;</button></h2>
+        
+        <div class="setting-group">
+          <label>Tema</label>
+          <select id="theme-select" class="setting-control">
+            <option value="dark-translucent">Escuro Translúcido (Padrão)</option>
+            <option value="midnight-blue">Meia-Noite Azul</option>
+            <option value="forest-dark">Floresta Escura</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>Fonte</label>
+          <select id="font-select" class="setting-control">
+            <option value="'Inter', sans-serif">Inter (Moderna)</option>
+            <option value="'Roboto Mono', monospace">Roboto Mono (Código)</option>
+            <option value="system-ui, sans-serif">Sistema Padrão</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>Cor de Destaque</label>
+          <input type="color" id="accent-color-picker" class="setting-control" value="#6366f1">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./chat.js"></script>
+</body>
+</html>

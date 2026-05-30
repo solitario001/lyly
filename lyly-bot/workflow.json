@@ -1,0 +1,63 @@
+{
+  "15": {
+    "inputs": {
+      "audio": "mulhergenerica.flac",
+      "audioUI": "/api/view?filename=minhavoz.flac&type=input&subfolder=&rand=0.5817220218768566"
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "16": {
+    "inputs": {
+      "audioUI": ""
+    },
+    "class_type": "PreviewAudio",
+    "_meta": {
+      "title": "Preview Audio"
+    }
+  },
+  "44": {
+    "inputs": {
+      "text": "",
+      "model": "VibeVoice-1.5B",
+      "attention_type": "auto",
+      "quantize_llm": "full precision",
+      "free_memory_after_generate": false,
+      "diffusion_steps": 20,
+      "seed": 42,
+      "cfg_scale": 1.3,
+      "use_sampling": false,
+      "temperature": 0.95,
+      "top_p": 0.95,
+      "max_words_per_chunk": 250,
+      "voice_speed_factor": 1,
+      "voice_to_clone": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "VibeVoiceSingleSpeakerNode",
+    "_meta": {
+      "title": "VibeVoice Single Speaker"
+    }
+  },
+  "46": {
+    "inputs": {
+      "filename_prefix": "lyly_voice",
+      "audioUI": "",
+      "audio": [
+        "44",
+        0
+      ]
+    },
+    "class_type": "SaveAudio",
+    "_meta": {
+      "title": "Save Audio (FLAC)"
+    }
+  }
+}
+
+
+

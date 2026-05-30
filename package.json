@@ -1,0 +1,17 @@
+{
+  "name": "lyly-corpo",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "^3.5.1",
+    "node-osc": "^11.5.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
