@@ -1,0 +1,58 @@
+<svg xmlns="http://w3.org" viewBox="0 0 540 330" width="100%" height="100%">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 6px; }
+    .box { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 4px; }
+    .text { font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace; font-size: 13px; fill: #c9d1d9; }
+    .title { font-weight: bold; fill: #f0f6fc; text-anchor: middle; }
+    .arrow { stroke: #8b949e; stroke-width: 1.5; fill: none; }
+    .arrow-head { fill: #8b949e; }
+    .bullet { fill: #8b949e; font-size: 11px; }
+  </style>
+
+  <!-- Quadro Principal -->
+  <rect x="10" y="10" width="520" height="310" class="bg" />
+  <text x="270" y="32" class="text title">Lyly Corpo</text>
+
+  <!-- Bloco Renderer -->
+  <rect x="30" y="60" width="130" height="150" class="box" />
+  <text x="45" y="82" class="text" font-weight="bold">Renderer</text>
+  <text x="45" y="110" class="text"><tspan class="bullet">•</tspan> Three.js</text>
+  <text x="45" y="130" class="text"><tspan class="bullet">•</tspan> VRM</text>
+  <text x="45" y="150" class="text"><tspan class="bullet">•</tspan> PoseMgr</text>
+  <text x="45" y="170" class="text"><tspan class="bullet">•</tspan> LipSync</text>
+  <text x="45" y="190" class="text"><tspan class="bullet">•</tspan> Blink</text>
+
+  <!-- Bloco Chat UI Overlay -->
+  <rect x="30" y="230" width="130" height="50" class="box" />
+  <text x="45" y="252" class="text" font-weight="bold">Chat UI</text>
+  <text x="45" y="270" class="text">Overlay</text>
+
+  <!-- Setas IPC -->
+  <path d="M 172 90 L 238 90" class="arrow" />
+  <polygon points="172,90 178,86 178,94" class="arrow-head" />
+  <polygon points="238,90 232,86 232,94" class="arrow-head" />
+  <text x="205" y="80" class="text" text-anchor="middle" font-size="11px">IPC</text>
+  <text x="205" y="105" class="text" text-anchor="middle" font-size="11px" fill="#8b949e">Avatar</text>
+  <text x="205" y="122" class="text" text-anchor="middle" font-size="11px" fill="#8b949e">Visemes</text>
+  <text x="205" y="139" class="text" text-anchor="middle" font-size="11px" fill="#8b949e">Emotion</text>
+
+  <!-- Bloco Main (Hub) -->
+  <rect x="250" y="60" width="250" height="75" class="box" />
+  <text x="265" y="82" class="text" font-weight="bold">Main (Hub)</text>
+  <text x="265" y="105" class="text"><tspan class="bullet">•</tspan> Roteia eventos</text>
+  <text x="265" y="123" class="text"><tspan class="bullet">•</tspan> Cache emoções</text>
+
+  <!-- Seta Main para Brain -->
+  <path d="M 375 135 L 375 163" class="arrow" />
+  <polygon points="375,163 371,157 379,157" class="arrow-head" />
+
+  <!-- Bloco Lyly Brain -->
+  <rect x="250" y="165" width="250" height="135" class="box" />
+  <text x="265" y="187" class="text" font-weight="bold">Lyly Brain</text>
+  <text x="265" y="210" class="text"><tspan class="bullet">•</tspan> LLM (Ollama)</text>
+  <text x="265" y="230" class="text"><tspan class="bullet">•</tspan> ChromaDB</text>
+  <text x="265" y="250" class="text"><tspan class="bullet">•</tspan> StreamProc</text>
+  <text x="265" y="270" class="text"><tspan class="bullet">•</tspan> Reflection</text>
+  <text x="265" y="290" class="text"><tspan class="bullet">•</tspan> TTS Pipeline</text>
+</svg>
+
