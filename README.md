@@ -48,6 +48,7 @@
 
 ## 🛠️ Tech Stack
 
+
 | Component | Tecnologia |
 |-----------|------------|
 | **Avatar 3D** | Three.js + three-vrm (modelo VRM) |
@@ -68,8 +69,6 @@
 | 📊 Visualização do Diagrama (Arraste para o lado se estiver no celular) |
 | :--- |
 | <pre style="white-space: pre !important; word-break: keep-all !important; overflow-wrap: normal !important; display: block; min-width: 600px;">┌──────────────────────────────────────────────────┐<br>│                 Lyly Corpo                       │<br>│                                                  │<br>│  ┌───────────┐    IPC      ┌──────────────────┐  │<br>│  │ Renderer  │ ◄────────►  │     Main (Hub)   │  │<br>│  │           │  Avatar     │                  │  │<br>│  │ • Three.js│  Visemes    │ • Roteia eventos │  │<br>│  │ • VRM     │  Emotion    │ • Cache emoções  │  │<br>│  │ • PoseMgr │             └───────┬──────────┘  │<br>│  │ • LipSync │                     │             │<br>│  │ • Blink   │              ┌──────▼──────────┐  │<br>│  └───────────┘              │   Lyly Brain    │  │<br>│                             │                 │  │<br>│  ┌──────────┐               │ • LLM (Ollama)  │  │<br>│  │ Chat UI  │               │ • ChromaDB      │  │<br>│  │ Overlay  │               │ • StreamProc    │  │<br>│  └──────────┘               │ • Reflection    │  │<br>│                             │ • TTS Pipeline  │  │<br>│                             └─────────────────┘  │<br>└──────────────────────────────────────────────────┘</pre> |
-
-
 
 ### Fluxo de uma conversa:
 
@@ -131,6 +130,7 @@ npm start
 
 ## 🎭 Expressões Faciais
 
+
 | Emoção | Descrição |
 |--------|-----------|
 | 😊 Happy | Olhos brilhantes, sobrancelhas elevadas |
@@ -169,8 +169,10 @@ lyly-corpo/
     └── chroma.py        # Servidor ChromaDB (Python)
 ```
 
+---
 
 ## 📊 Dados Técnicos
+
 
 | Parâmetro | Valor |
 |-----------|-------|
@@ -204,9 +206,3 @@ lyly-corpo/
 Projeto pessoal.
 
 ---
-
-<div align="center">
-
-**Feito por solitario001** · [GitHub](https://github.com/solitario001)
-
-</div>
