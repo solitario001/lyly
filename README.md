@@ -65,10 +65,7 @@
 
 ## 🧬 Arquitetura
 
-
-| 📊 Visualização do Diagrama (Arraste para o lado se estiver no celular) |
-| :--- |
-| <pre style="white-space: pre !important; word-break: keep-all !important; overflow-wrap: normal !important; display: block; min-width: 600px;">┌──────────────────────────────────────────────────┐<br>│                 Lyly Corpo                       │<br>│                                                  │<br>│  ┌───────────┐    IPC      ┌──────────────────┐  │<br>│  │ Renderer  │ ◄────────►  │     Main (Hub)   │  │<br>│  │           │  Avatar     │                  │  │<br>│  │ • Three.js│  Visemes    │ • Roteia eventos │  │<br>│  │ • VRM     │  Emotion    │ • Cache emoções  │  │<br>│  │ • PoseMgr │             └───────┬──────────┘  │<br>│  │ • LipSync │                     │             │<br>│  │ • Blink   │              ┌──────▼──────────┐  │<br>│  └───────────┘              │   Lyly Brain    │  │<br>│                             │                 │  │<br>│  ┌──────────┐               │ • LLM (Ollama)  │  │<br>│  │ Chat UI  │               │ • ChromaDB      │  │<br>│  │ Overlay  │               │ • StreamProc    │  │<br>│  └──────────┘               │ • Reflection    │  │<br>│                             │ • TTS Pipeline  │  │<br>│                             └─────────────────┘  │<br>└──────────────────────────────────────────────────┘</pre> |
+<img src="docs/arquitetura.svg?sanitize=true" alt="Arquitetura do Projeto Lyly" width="550">
 
 ### Fluxo de uma conversa:
 
