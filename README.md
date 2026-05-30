@@ -34,20 +34,60 @@
 
 ---
 
-## ✨ O que é a Lyly?
+![sobre](https://github.com/user-attachments/assets/7a59e85a-9248-44bc-a73f-671cb1c4e415)
+
+
 
 **Lyly** é um avatar VRM 3D com animações procedurais integradas a uma IA conversacional. Ela não usa keyframes ou animações pré-gravadas — cada expressão facial, piscada de olhos e movimento labial é calculado em tempo real pela GPU.
 
 ### O que ela faz:
-- 🗣️ **Conversa naturalmente** com você via chat flutuante
-- 😊 **Expressa emoções faciais** (alegria, tristeza, raiva, surpresa...) baseadas no contexto da conversa
-- 👄 **Lip-sync sincronizado** — a boca se move em perfeita sincronia com o áudio gerado pela IA
-- 🧠 **Lembra de você** — usa memória vetorial para recordar fatos, preferências e histórico de conversas
-- 💭 **Reflete sobre si mesma** — aprende padrões de comportamento e evolui sua personalidade ao longo do tempo
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Recurso</th>
+      <th align="left">Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/ba7be2ab-ae22-42dd-9c88-ef0d5280ebc6" width="160" alt="conversa"></td>
+      <td>Conversa naturalmente com você via chat flutuante.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/f75d3e33-5d90-4ddf-891b-cef5650606d0" width="160" alt="emocoes"></td>
+      <td>Expressa emoções faciais (alegria, tristeza, raiva, surpresa...) baseadas no contexto da conversa.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/6ea45ffd-74fa-4663-87aa-769a424349a8" width="160" alt="lipsync"></td>
+      <td>Lip-sync sincronizado — a boca se move em perfeita sincronia com o áudio gerado pela IA.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/e262af41-55f8-43cb-b63f-a1e25df9c060" width="160" alt="memoria"></td>
+      <td>Lembra de você — usa memória vetorial para recordar fatos, preferências e histórico de conversas.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/bc454ce9-191b-4ba7-8aee-938245c92f94" width="160" alt="reflete"></td>
+      <td>Reflete sobre si mesma — aprende padrões de comportamento e evolui sua personalidade ao longo do tempo.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 ---
 
-## 🛠️ Tech Stack
+![Tech Stack](https://github.com/user-attachments/assets/63e12a52-d793-4fe9-ab5a-89ad000a3f70)
+
 
 
 | Component | Tecnologia |
@@ -80,7 +120,7 @@
 
 ---
 
-## 🚀 Instalação & Execução
+![Instalação & Execução](https://github.com/user-attachments/assets/aa2c3c10-bd46-4ca3-afff-9ef98d8292da)
 
 ### Pré-requisitos
 
