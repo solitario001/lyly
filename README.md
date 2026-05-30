@@ -64,28 +64,11 @@
 
 ## 🧬 Arquitetura
 
-<pre style="white-space: pre; overflow-x: auto; background-color: #0d1117; border: 1px solid #30363d; padding: 16px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 14px; line-height: 1.45; color: #c9d1d9;">
-┌──────────────────────────────────────────────────┐
-│                 Lyly Corpo                       │
-│                                                  │
-│  ┌───────────┐    IPC      ┌──────────────────┐  │
-│  │ Renderer  │ ◄────────►  │     Main (Hub)   │  │
-│  │           │  Avatar     │                  │  │
-│  │ • Three.js│  Visemes    │ • Roteia eventos │  │
-│  │ • VRM     │  Emotion    │ • Cache emoções  │  │
-│  │ • PoseMgr │             └───────┬──────────┘  │
-│  │ • LipSync │                     │             │
-│  │ • Blink   │              ┌──────▼──────────┐  │
-│  └───────────┘              │   Lyly Brain    │  │
-│                             │                 │  │
-│  ┌──────────┐               │ • LLM (Ollama)  │  │
-│  │ Chat UI  │               │ • ChromaDB      │  │
-│  │ Overlay  │               │ • StreamProc    │  │
-│  └──────────┘               │ • Reflection    │  │
-│                             │ • TTS Pipeline  │  │
-│                             └─────────────────┘  │
-└──────────────────────────────────────────────────┘
-</pre>
+
+| 📊 Visualização do Diagrama (Arraste para o lado se estiver no celular) |
+| :--- |
+| <pre style="white-space: pre !important; word-break: keep-all !important; overflow-wrap: normal !important; display: block; min-width: 600px;">┌──────────────────────────────────────────────────┐<br>│                 Lyly Corpo                       │<br>│                                                  │<br>│  ┌───────────┐    IPC      ┌──────────────────┐  │<br>│  │ Renderer  │ ◄────────►  │     Main (Hub)   │  │<br>│  │           │  Avatar     │                  │  │<br>│  │ • Three.js│  Visemes    │ • Roteia eventos │  │<br>│  │ • VRM     │  Emotion    │ • Cache emoções  │  │<br>│  │ • PoseMgr │             └───────┬──────────┘  │<br>│  │ • LipSync │                     │             │<br>│  │ • Blink   │              ┌──────▼──────────┐  │<br>│  └───────────┘              │   Lyly Brain    │  │<br>│                             │                 │  │<br>│  ┌──────────┐               │ • LLM (Ollama)  │  │<br>│  │ Chat UI  │               │ • ChromaDB      │  │<br>│  │ Overlay  │               │ • StreamProc    │  │<br>│  └──────────┘               │ • Reflection    │  │<br>│                             │ • TTS Pipeline  │  │<br>│                             └─────────────────┘  │<br>└──────────────────────────────────────────────────┘</pre> |
+
 
 
 ### Fluxo de uma conversa:
