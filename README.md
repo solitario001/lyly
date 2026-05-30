@@ -2,7 +2,9 @@
 
 <div align="center">
 
-**V-Tuber avatar com inteligência artificial — 100% procedural, zero keyframes.**
+![visitacard](https://github.com/user-attachments/assets/045bc6bf-27f3-4e28-847e-7ef6d2a867bf)
+
+
 
 [![Electron](https://img.shields.io/badge/Electron-%2347848F.svg?style=for-the-badge&logo=electron&logoColor=white)](https://www.electronjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
@@ -21,11 +23,10 @@
   <img src="https://img.youtube.com/vi/vW6walwxW6k/maxresdefault.jpg" alt="Lyly Corpo Demo" width="900">
 </a>
 
-<br><br>
 
-<a href="https://www.youtube.com/watch?v=vW6walwxW6k">
-  <img src="https://img.shields.io/badge/▶_Watch_Full_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-</a>
+
+[![play](https://github.com/user-attachments/assets/04ad9ed0-49e8-47f8-a71c-0d0db28291e3)](https://www.youtube.com/watch?v=vW6walwxW6k)
+
 
 </div>
 
