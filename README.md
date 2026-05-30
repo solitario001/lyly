@@ -64,7 +64,7 @@
 
 ## 🧬 Arquitetura
 
-```
+<pre style="white-space: pre; overflow-x: auto; background-color: #0d1117; border: 1px solid #30363d; padding: 16px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 14px; line-height: 1.45; color: #c9d1d9;">
 ┌──────────────────────────────────────────────────┐
 │                 Lyly Corpo                       │
 │                                                  │
@@ -85,7 +85,8 @@
 │                             │ • TTS Pipeline  │  │
 │                             └─────────────────┘  │
 └──────────────────────────────────────────────────┘
-```
+</pre>
+
 
 ### Fluxo de uma conversa:
 
