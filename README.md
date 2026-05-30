@@ -1,4 +1,4 @@
-# 🌸 Lyly 
+# Lyly 
 
 <div align="center">
 
@@ -57,7 +57,7 @@
   </tbody>
   <tbody>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/f75d3e33-5d90-4ddf-891b-cef5650606d0" width="160" alt="emocoes"></td>
+      <td><img src="https://github.com/user-attachments/assets/3d4546a3-d895-42a2-b162-2978b91a0d9e" width="160" alt="emocoes"></td>
       <td>Expressa emoções faciais (alegria, tristeza, raiva, surpresa...) baseadas no contexto da conversa.</td>
     </tr>
   </tbody>
@@ -82,6 +82,7 @@
 </table>
 
 
+ 
 
 
 ---
